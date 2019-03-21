@@ -8,7 +8,7 @@ In this sample, a new customer is created causing the data store creation and th
 Backpressure is used to determine the maximum amount of data collected.
 JAX-RS 2.1 Reactive Extension Flowable is used to retreive the collected data.
 
-To run this sample, first [download](https://github.com/OpenLiberty/sample-reactive-extensions/archive/master.zip) or clone this repo - to clone:
+To run this sample, first [download](https://github.com/OpenLiberty/sample-reactive-extensions.zip) or clone this repo - to clone:
 ```
 git clone git@github.com:OpenLiberty/sample-reactive-extensions.git
 ```
