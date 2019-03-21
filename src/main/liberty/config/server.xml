@@ -1,0 +1,12 @@
+<server description="Sample Liberty server">
+
+  <featureManager>
+    <feature>jaxrs-2.1</feature>
+  </featureManager>
+
+  <applicationManager autoExpand="true" />
+
+  <httpEndpoint host="localhost" httpPort="${default.http.port}" httpsPort="${default.https.port}" id="defaultHttpEndpoint"/>
+
+  <webApplication location="io.openliberty.sample.reactive.lillibrary.war" contextRoot="/"/>
+</server>
