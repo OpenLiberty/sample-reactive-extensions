@@ -92,7 +92,7 @@ The lambda in the `retryWhen` method is used to delay the data collection when t
 ----
 So what does this actually do? First, notice that we create a `FlowableOnSubscribe` inner class in the `Flowable.create` method. Its `subscribe` method loops to simulate data collection and the `BackpressureStrategy` is set to `BUFFER`, which buffers the `onNext` values until they are consumed. We will be using a full buffer to determine the maximum amount of data to collect to prevent overloading the back-end resource, a simulated database in this case.
 Next, notice that the `observeOn` method specifies `true` to delay onError notifications.  
-This allows the threads to continue processing until all the treads in the buffer are completed.
+This allows the threads to continue processing until all the threads in the buffer are completed.
 Lastly, notice that the `onNext` method in the `ResourceSubscriber` is used to update the simulated database with the data points.
 
 == Retrieving the collected data in a remote client using JAX-RS 2.1 Reactive Extensions
